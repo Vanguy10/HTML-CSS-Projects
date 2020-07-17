@@ -34,6 +34,16 @@ h1 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5)
 }
 
+h1::after { /* underline effect*/
+    display: block;
+    content:"";
+    height: 2px;
+    width: 150px;
+    background: #E91C1C;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px tgba(0,0,0,0.5);
+}
+
 h2 {
     line-height: 50px;
     color: #E91c1c;
@@ -203,6 +213,17 @@ section {
     text-align: center;
     margin: 0 auto;
     color: #13161B;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161B;
     font-weight: 900;
     font-size: 1.5em;
     font-variant: small-caps;
@@ -246,7 +267,7 @@ section {
     border-radius: 7px;
     background: #13161b;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-    font-family:'Raleway", sans-serif;
+    font-family:Raleway", sans-serif;
 }
 
 .resevation input[type="text"]:hover {
@@ -269,7 +290,6 @@ section {
     position: relative;
     display: inline;
     float: right;
-    
 }
 
 .terms:hover {
